@@ -14,6 +14,7 @@ $(function () {
   };
   
   var jsonFetcher = function() {
+    var href = $('[data-id="rv-ta-i"]').data('href')
     var timeout;
     return function findMatches(q, cb, asyncs) {
       function handleResponse(data) {
@@ -27,7 +28,7 @@ $(function () {
       timeout = setTimeout(function() {
         $.ajax({
           dataType: "json",
-          url: "http://leftproductions.localhost:3001/search/autocomplete.json?query=" + q,
+          url: href + "/search/autocomplete.json?query=" + q,
           crossOrigin: true,
           success: handleResponse,       
         });
