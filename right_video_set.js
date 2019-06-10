@@ -1,7 +1,7 @@
 function setupRightVideoSearch() {
 	var srcs = [
 	  'https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.jquery.min.js',
-	  'https://cdn.jsdelivr.net/gh/duncangarde/right_video_remote@0.3/right_video_search.js',
+	  'https://cdn.jsdelivr.net/gh/duncangarde/right_video_remote@0.4/right_video_search.js',
 	];
 	if (window.jQuery) {} 
 	else {
@@ -18,7 +18,7 @@ function setupRightVideoSearch() {
 	  };
 	});
 	[
-	  'https://cdn.jsdelivr.net/gh/duncangarde/right_video_remote@0.3/right_video_search.css'
+	  'https://cdn.jsdelivr.net/gh/duncangarde/right_video_remote@0.4/right_video_search.css'
 	].forEach(function(href) {
 	  if (document.querySelectorAll('[href="' + href +'"]').length > 0) {}
 	  else {

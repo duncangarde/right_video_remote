@@ -33,6 +33,7 @@
   box-shadow: none;
   font-size: 2em;
   font-weight: 300;
+  width: 14em;
 }
 
 .rv-search input:focus {
